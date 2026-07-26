@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — June Ren Photography</title>
+  <meta name="description" content="Get in touch with June Ren Photography for food and restaurant photography in Seattle, WA." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html" class="nav-logo">June Ren <span>Photography</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Contact -->
+  <section class="contact-section">
+    <div class="contact-grid">
+
+      <!-- Info -->
+      <div class="contact-info">
+        <p class="section-label">Get in Touch</p>
+        <h1>Let's Create Something Beautiful</h1>
+        <p>
+          I'm currently accepting new clients in the Seattle area. Whether you need
+          menu photography, social content, or a full restaurant shoot, I'd love
+          to hear about your project.
+        </p>
+
+        <div class="contact-details">
+          <div class="contact-detail-item">
+            <span class="label">Location</span>
+            <span class="value">Greater Seattle Area</span>
+          </div>
+          <div class="contact-detail-item">
+            <span class="label">Email</span>
+            <a class="value" href="mailto:jyr@uw.edu">jyr@uw.edu</a>
+          </div>
+          <div class="contact-detail-item">
+            <span class="label">Instagram</span>
+            <a class="value" href="https://www.instagram.com/juneren_photography" target="_blank" rel="noopener">@juneren_photography</a>
+          </div>
+          <div class="contact-detail-item">
+            <span class="label">Response Time</span>
+            <span class="value">Within 1–2 business days</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <!--
+        This form uses Formspree for free email delivery.
+        Steps to activate:
+          1. Go to https://formspree.io and create a free account
+          2. Create a new form and copy your form endpoint
+          3. Replace "YOUR_FORMSPREE_ID" in the action below with your ID
+             e.g. action="https://formspree.io/f/abcdefgh"
+      -->
+      <div class="contact-form">
+        <h2>Send a Message</h2>
+        <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="jane@restaurant.com" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="restaurant">Restaurant / Business Name</label>
+            <input type="text" id="restaurant" name="restaurant" placeholder="The Cozy Kitchen" />
+          </div>
+
+          <div class="form-group">
+            <label for="service">What are you interested in?</label>
+            <select id="service" name="service">
+              <option value="" disabled selected>Select a service</option>
+              <option value="menu">Menu Photography</option>
+              <option value="ambiance">Restaurant &amp; Ambiance</option>
+              <option value="social">Social Media Content</option>
+              <option value="other">Other / Not sure yet</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Tell Me About Your Project</label>
+            <textarea id="message" name="message" placeholder="A brief description of your project, timeline, and any questions you have..." required></textarea>
+          </div>
+
+          <!-- Honeypot spam prevention -->
+          <input type="text" name="_gotcha" style="display:none" />
+
+          <button type="submit" class="btn btn-primary" style="width:100%;">Send Message</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <span class="footer-logo">June Ren Photography</span>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <p>Seattle, WA &mdash; &copy; <script>document.write(new Date().getFullYear())</script> June Ren Photography</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
